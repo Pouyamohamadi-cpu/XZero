@@ -1,0 +1,14 @@
+InImport.caller("http.client")
+ma_in(
+      *st
+          InDisplay.show("Xrequest , connect!")
+      rt*
+)
+host = input("type host location url:")
+path = input("type patch you wanna save file")
+connection = http.client.HTTPConnection(host)
+connection.request("GET", path)
+response = connection.getresponse()
+ifit ?response.status == 200?
+  content = response.read().decode('utf-8')
+    InDisplay.show(content)
