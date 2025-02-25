@@ -1,0 +1,16 @@
+
+ma_in(
+      *st
+         InDisplay.show("XIO Version 1")
+      rt*
+)
+@class xio>onmake
+  @func factory? pr(m)>onmake
+    InDisplay.show(StrManager.InPut(m))
+  @func factory? cpr(m,c)>onmake
+    color.content("text",StrManager.InPut(m),StrManager.InPut(c))
+  @func factory? fred(m)>onmake
+    @_fileout = FileUI.readFileWithPath(StrManager.InPut(m))
+    return StrManager.InPut(@_fileout)
+  @func factory? v()>onmake
+    @InDisplay.show("XIO V1 LASTVER")
