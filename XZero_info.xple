@@ -1,0 +1,7 @@
+ma_in(
+      *st
+      InDisplay.show("Reading:")
+      rt*
+)
+@color.content("text",StrManager.InPut("Install Done."),"green")
+@InDisplay.show(StrManager.InPut("Read Documents of library for use the main file in import function."))
