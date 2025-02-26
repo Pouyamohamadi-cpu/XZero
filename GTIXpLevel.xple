@@ -1,0 +1,13 @@
+#main of google translate in xplevel project.
+#2025 - version 0.1
+from googletrans import Translator
+ma_in(
+      *st
+         @InDisplay.show("")
+      rt*
+)
+translator = Translator()
+@class gtxp>onmake
+  @func factory?newText(text, src, dest)>onmake
+    translated = translator.translate(text, src=src, dest=dest)
+    @InDisplay.show(StrManager.InPut(translated.text))
