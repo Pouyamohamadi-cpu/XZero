@@ -1,0 +1,22 @@
+@pyxple.il("math")
+@pyxple.il("MathFunction")
+ma_in(
+      *st
+         InDisplay.show("Xtringle version 1.0 visit http://xmath.ct.ws/xtringle.html")
+      rt*
+)
+@class xtringle>onmake
+  @func factory?sin(angle)>onmake
+    return Mather.siner(Mather.radianser(angle))
+  @func factory?cos(angle)>onmake
+    return math.cos(math.radians(angle))
+  @func factory?xplethagorean_theorem(a,b)>onmake
+    @c = Mather.square(a,2)
+    @d = Mather.square(b,2)
+    @to = Mather.plus(c,d)
+    return @to
+  @func factory?area(hi,ba)>onmake
+    @d = Mather.inter(0.5,hi)
+    return Mather.inter(@d,ba)
+  @func factory?sintcos(angle)>onmake
+    return math.cos(math.radians(90 - @angle))
